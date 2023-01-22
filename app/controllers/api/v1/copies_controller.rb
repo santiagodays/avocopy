@@ -1,15 +1,22 @@
-class Api::V1::CopiesController > ApiController
+class Api::V1::CopiesController < ApplicationController
   def index
     @copies = Copy.all
   end
 
   def new
-    @copy = Copy.new
+    @copy = Copy.new()
+    render :template => "copies/new_file"
   end
 
   def create
-    FileCreator.call(params[:file_path])
-  end
+    @copy = Copy.new(copy_params)
+    if @copy.save
+      FileCreatorWorker.perform_async(@copy.attachment.url)
+      redirect_to copies_path, notice: "The copy #{@copy.name} has been created."
+    else
+      render :new
+    end
+end
 
   def destroy
     @copy = Copy.find(params[:id])

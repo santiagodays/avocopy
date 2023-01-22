@@ -1,3 +1,5 @@
+require 'docx'
+
 class FileCreator
   def initialize(file_path)
     @file_path = file_path

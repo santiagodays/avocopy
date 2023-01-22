@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   # Root
   root to: 'home#index'
+  # File manager Dashboard
+  get '/dashboard', to:"dashboard#index"
   # Devise Routes
   devise_for :users
   # Api's

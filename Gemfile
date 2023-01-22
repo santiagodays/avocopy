@@ -36,6 +36,9 @@ gem 'devise'
 # JWT
 gem 'jwt', '~> 2.6'
 
+# Sidekiq
+gem 'sidekiq'
+
 # Mongoid
 gem 'mongoid', '~> 8.0.2'
 
@@ -44,6 +47,7 @@ gem 'docx'
 
 # Carrierwave
 gem 'carrierwave', '~> 2.2', '>= 2.2.3'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
