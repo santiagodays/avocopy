@@ -46,8 +46,11 @@ gem 'mongoid', '~> 8.0.2'
 gem 'docx'
 
 # Carrierwave
-gem 'carrierwave', '~> 2.2', '>= 2.2.3'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'mongoid-grid_fs'
+
+# Dotenv
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"

@@ -4,7 +4,7 @@ development:
     # Defines the default client. (required)
     default:
       # Mongoid can connect to a URI accepted by the driver:
-      uri: mongodb+srv://admin:admin123@avocopy.djw0d.mongodb.net/test
+      uri: mongodb+srv://admin:${AVOCOPY_DEV_MONGODB}@avocopy.djw0d.mongodb.net/test
 
       # Otherwise define the parameters separately.
       # This defines the name of the default database that Mongoid can connect to.

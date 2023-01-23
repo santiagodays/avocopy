@@ -111,6 +111,10 @@ GEM
     docx (0.7.0)
       nokogiri (~> 1.13, >= 1.13.0)
       rubyzip (~> 2.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.12.0)
     ffi (1.15.5)
     globalid (1.0.1)
@@ -269,15 +273,16 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
-  carrierwave (~> 2.2, >= 2.2.3)
   carrierwave-mongoid
   debug
   devise
   docx
+  dotenv-rails
   importmap-rails
   jbuilder
   jwt (~> 2.6)
   mongoid (~> 8.0.2)
+  mongoid-grid_fs
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
   selenium-webdriver
