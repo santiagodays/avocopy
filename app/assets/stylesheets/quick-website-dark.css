@@ -5,18 +5,18 @@ Theme: Quick – Website UI Kit
 Version: 1.1.1
 Product Page: https://themes.getbootstrap.com/product/quick-website-ui-kit-2/
 License: https://themes.getbootstrap.com/licenses/
-Author: Webpixels
-Author URI: https://webpixels.io
+Author: AvoCopy
+Author URI: https://AvoCopy.io
 
 ---
 
-Copyright 2020 Webpixels
+Copyright 2020 AvoCopy
 
 */
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700,800&display=swap);
 :root
 {
-    --blue: #0c66ff;
+    --greenish: #0c66ff;
     --indigo: #6e00ff;
     --purple: #510fa8;
     --pink: #f074ad;
